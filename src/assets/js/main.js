@@ -101,11 +101,12 @@
                 this.st.mainClass = this.st.el.attr("data-effect");
               },
             },
-            // gallery: {
-            //     enabled: true,
-            //     navigateByImgClick: true,
-            //     preload: [0, 1] // Will preload 0 - before current, and 1 after current image
-            // }
+            gallery: {
+              enabled: true,
+              preload: [0, 2],
+              closeOnBgClick: true,
+              navigateByImgClick: true,
+            },
           });
       });
     }
