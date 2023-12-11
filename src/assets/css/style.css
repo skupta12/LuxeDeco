@@ -1527,11 +1527,14 @@ p {
     position: absolute;
     right: 0;
     bottom: 20px;
-    background-color: var(--clr-neutral-100);
+    background-color: white;
     width: 50px;
     height: 100px;
     border-radius: 100vmax 0 0 100vmax;
+}
 
+.cta-box .btn-2 a {
+    width: auto;
 }
 
 .cta-box .section-text {
@@ -1544,6 +1547,7 @@ p {
 .cta-box .section-text p {
     color: white;
 }
+
 
 
 /* =========================================================== */
