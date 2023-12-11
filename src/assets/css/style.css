@@ -205,6 +205,15 @@ body {
     background-color: var(--clr-primary-100);
 }
 
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--clr-neutral-100);
+    border-radius: 50px; 
+}
+
 /* =========================================================== */
 /* Typography */
 /* =========================================================== */
