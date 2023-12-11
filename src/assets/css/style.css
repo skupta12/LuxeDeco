@@ -316,17 +316,6 @@ p {
     background-color: transparent;
 }
 
-.btn-1 a[data-type="inverted"]  {
-    color: white;
-    background-color: var(--clr-neutral-100);
-    border: 2px solid transparent;
-}
-
-.btn-1 a[data-type="inverted"]:hover {
-    background-color: transparent;
-    border: 2px solid var(--clr-neutral-100);
-}
-
 .btn-2 a {
     display: inline-block;
     border-radius: var(--size-100);
@@ -340,8 +329,8 @@ p {
 }
 
 .btn-2 a:hover {
-    --clr-dark-orange-button: #db500f;
-    background-color: var(--clr-dark-orange-button);
+    --clr-dark-orange: #db500f;
+    background-color: var(--clr-dark-orange);
 }
 
 .btn-3 a {
@@ -1440,7 +1429,7 @@ p {
     position: relative;
 }
 
-.accordion-section .container .shape {
+.accordion-section > .container .shape {
     position: absolute;
     left: 0;
     top: 50px;
@@ -1514,17 +1503,12 @@ p {
 .accordion-icon {
 	position: relative;
 	width: 100%;
-    max-width: 14px;
-	height: 14px;
+    max-width: 12px;
+	height: 12px;
 	cursor: pointer;
 }
 
-@media(max-width: 640px) {
-    .accordion-icon {
-        max-width: 12px;
-        height: 12px;
-    }
-}
+
 
 .accordion-icon.active::before {
     -webkit-transform: translateY(-50%) rotate(-90deg);
