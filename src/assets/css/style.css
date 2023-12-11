@@ -68,9 +68,10 @@ li {
 }
 
 /* Set core root defaults */
-
 html,
 body {
+   
+    overflow-x: hidden;
     min-height: 100%;
     overflow: hidden;
     overflow-y: auto;
@@ -432,8 +433,7 @@ p {
     -webkit-transition: all 0.4s;
     transition: all 0.4s;
 }
-
-.primary-header .navbar li a:hover:after, 
+ 
 .primary-header .navbar li a.active:after {
   left: 0;
   right: auto;
@@ -1239,36 +1239,8 @@ p {
     margin-bottom: var(--size-400);
 }
 
-.mfp-zoom-in .mfp-with-anim {
-    opacity: 0;
-    transform: scale(0.8); 
-    -webkit-transition: all 0.2s ease-in-out;
-        transition: all 0.2s ease-in-out; 
-   
-}
-  
-.mfp-zoom-in.mfp-bg {
-    opacity: 0;
-    -webkit-transition: all 0.3s ease-out;
-        transition: all 0.3s ease-out;
-}
-  
-.mfp-zoom-in.mfp-ready .mfp-with-anim {
-    opacity: 1;
-    transform: scale(1); 
-}
-  
-.mfp-zoom-in.mfp-ready.mfp-bg {
-    opacity: 0.8;
-}
-  
-.mfp-zoom-in.mfp-removing .mfp-with-anim {
-    transform: scale(0.8); 
-    opacity: 0;
-}
-  
-.mfp-zoom-in.mfp-removing.mfp-bg {
-    opacity: 0;
+.mfp-wrap ~ * {
+	filter: blur(10px);
 }
 
 @media(max-width: 1024px) {

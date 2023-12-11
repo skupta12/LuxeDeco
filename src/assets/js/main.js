@@ -91,7 +91,8 @@
             mainClass: "mfp-fade",
             fixedContentPos: true,
             closeBtnInside: true,
-            removalDelay: 400,
+            fixedBgPos: true,
+            // removalDelay: 400,
             callbacks: {
               beforeOpen: function () {
                 this.st.image.markup = this.st.image.markup.replace(
