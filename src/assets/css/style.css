@@ -656,14 +656,14 @@ p {
     border-radius: 100vmax 100vmax 0 0;
 }
 
-.rating-box .rating-item p {
-    font-weight: var(--fw-regular);
-    font-size: var(--fs-500);
-    opacity: 0.8;
-}
 
 .rating-stars .rating-star:not(:last-child) {
     padding-right: var(--size-100);
+}
+
+.rating-box .rating-item p {
+    font-weight: var(--fw-regular);
+    opacity: 0.8;
 }
 
 @media(max-width: 1024px) {
@@ -709,10 +709,6 @@ p {
     .hero-item .rating-box {
         flex-direction: column;
         justify-content: center;
-    }
-
-    .rating-box .rating-item p {
-        font-size: var(--fs-450);
     }
 
     .hero-image .shape {
