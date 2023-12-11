@@ -1190,23 +1190,13 @@ p {
 
 .white-popup button.mfp-close {
     position: absolute;
-    top: 30px;
-    right: 22px;
+    top: 10px;
+    right: 10px;
     font-size: 26px;
     border-radius: 50%;
     background-color: var(--clr-neutral-100);
     color: white;
     opacity: 0.8;
-}
-
-.popup-box .shape {
-    position: absolute;
-    right: 0;
-    bottom: -30px;
-    background-color: var(--clr-neutral-100);
-    width: 50px;
-    height: 100px;
-    border-radius: 100vmax 0 0 100vmax;
 }
 
 .popup-image img {
