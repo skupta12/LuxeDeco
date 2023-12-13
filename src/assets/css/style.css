@@ -227,9 +227,9 @@ body {
     width: 8px;
 }
 
-::-webkit-scrollbar-thumb {
-    background-color: rgb(161, 161, 161);
-    border-radius: 50px;
+body::-webkit-scrollbar-thumb {
+    background-color: var(--clr-neutral-200);
+    border-radius: 50px; 
 }
 
 /* =========================================================== */
@@ -1654,3 +1654,5 @@ p {
         flex-direction: column;
     }
 }
+
+  
