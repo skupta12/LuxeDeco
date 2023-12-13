@@ -21,44 +21,51 @@
 </head>
 <body class="body">
      <!-- Header -->
-     <header class="primary-header" id="primary-header">
+     <header class="primary-header" data-header>
         <div class="container">
-            <!-- Logo -->
-            <div class="header-logo logo">
+            <a href="#" class="logo">
                 <h4>LuxeDeco<span class="dot">.</span></h4>
-            </div>
-            <!-- Burger menu -->
-            <button type="button" class="burger-menu" aria-label="Burger Menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <!-- Navigation -->
-            <nav class="nav scroll-it">
-                <ul class="navbar">
-                    <li>
-                        <a class="active" data-scroll-nav="0" href="#">Home</a>
+            </a>
+            <nav class="navbar" data-navbar>
+                <div class="wrapper">
+                    <div class="header-logo logo">
+                        <h4>LuxeDeco<span class="dot">.</span></h4>
+                    </div>
+                    <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+                        <img src="assets/img/close.svg" alt="">
+                    </button>
+                </div>
+                <ul class="navbar-list scroll-it">
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link" data-scroll-nav="0" data-nav-link>Home</a>
                     </li>
-                    <li>
-                        <a data-scroll-nav="1" href="#">About</a>
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link" data-scroll-nav="1" data-nav-link>Features</a>
                     </li>
-                    <li>
-                        <a data-scroll-nav="2" href="#">Explore</a>
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link" data-scroll-nav="2" data-nav-link>Explore</a>
                     </li>
-                    <li>
-                        <a data-scroll-nav="3" href="#">Interior</a>
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link" data-scroll-nav="3" data-nav-link>Interior</a>
                     </li>
-                    <li>
-                        <a data-scroll-nav="4" href="#">Testimonial</a>
-                    </li>
-                    <li>
-                        <a data-scroll-nav="5" href="#">FAQ</a>
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link" data-scroll-nav="4" data-nav-link>Testimonial</a>
                     </li>
                 </ul>
             </nav>
-            <div class="btn-1">
-                <a href="#">Get Started Free</a>
+            <div class="header-actions">
+                <div class="btn-1">
+                    <a href="#">Get Started Free</a>
+                </div>
+                <button class="header-action-btn" aria-label="open menu" data-nav-toggler>
+                    <div type="button" class="burger-menu" aria-hidden="true">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
             </div>
+            <div class="overlay" data-nav-toggler data-overlay></div>
         </div>
     </header>
     <main class="main-wrapper">

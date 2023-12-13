@@ -118,28 +118,38 @@
   // Menu toggle
   // -----------------------
 
+  const addEventOnElem = function (elem, type, callback) {
+    if (elem.length > 1) {
+      for (let i = 0; i < elem.length; i++) {
+        elem[i].addEventListener(type, callback);
+      }
+    } else {
+      elem.addEventListener(type, callback);
+    }
+  }
+
   GOS.Menu_toggle = function () {
-    const burger = document.querySelector(".burger-menu");
-    const primaryHeader = document.querySelector(".primary-header");
+    const navbar = document.querySelector("[data-navbar]");
+    const navTogglers = document.querySelectorAll("[data-nav-toggler]");
+    const navLinks = document.querySelectorAll("[data-nav-link]");
+    const overlay = document.querySelector("[data-overlay]");
 
-    burger.addEventListener("click", function () {
-      primaryHeader.classList.toggle("open-menu");
-    });
+    const toggleNavbar = function () {
+      navbar.classList.toggle("active");
+      overlay.classList.toggle("active");
+    };
 
-    const nav = document.querySelectorAll(".navbar a");
-    nav.forEach(function (link) {
-      link.addEventListener("click", function () {
-        const isBurgerVisible = window.getComputedStyle(burger).display !== "none";
-        if (isBurgerVisible) {
-          primaryHeader.classList.remove("open-menu");
-        }
-      });
-    });
+    addEventOnElem(navTogglers, "click", toggleNavbar);
+
+    const closeNavbar = function () {
+      navbar.classList.remove("active");
+      overlay.classList.remove("active");
+    };
+
+    addEventOnElem(navLinks, "click", closeNavbar);
+
+   
   };
-
-  // -----------------------
-  // Header
-  // -----------------------
 
   GOS.Header_change = function () {
     var header = $(".primary-header");
@@ -150,7 +160,7 @@
       header.removeClass("header-onscroll");
     }
   };
-
+ 
   // -----------------------
   // Counter
   // -----------------------
@@ -306,10 +316,10 @@
     GOS.Scroll_it();
     GOS.Menu_toggle();
     GOS.ScrolltoTop();
-    GOS.Header_change();
     GOS.Counter();
     GOS.Scroller(); 
     GOS.Masonry();
+    GOS.Header_change();
     GOS.Gallery();
     GOS.Swiper(); 
     GOS.Accordion();
