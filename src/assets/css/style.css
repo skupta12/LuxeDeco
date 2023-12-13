@@ -434,7 +434,6 @@ p {
     left: 0;
     width: 100%;
     z-index: 4;
-    padding: 10px 0;
     transition: 0.2s var(--cubic-out);
 }
 
@@ -503,7 +502,7 @@ p {
     position: absolute;
     left: auto;
     right: 0;
-    bottom: -1.5px;
+    bottom: 5px;
     height: 2px;
     width: 0;
     background-color: var(--clr-neutral-100);
@@ -518,10 +517,10 @@ p {
 }
 
 .nav-close-btn {
-    width: 25px;
-    height: 25px;
-    box-shadow: var(--shadow-2);
-    padding: 8px;
+    width: 35px;
+    height: 35px;
+    box-shadow: 1px 7px 35px 0px rgba(0,0,0,0.18);
+    padding: 12px;
     border-radius: 50%;
 }
 
@@ -579,10 +578,6 @@ p {
     .navbar,
     .navbar.active {
         all: unset;
-    }
-
-    .primary-header {
-        padding: 0;
     }
 
     .navbar-list {
