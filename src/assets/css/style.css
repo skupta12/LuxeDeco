@@ -432,9 +432,10 @@ p {
     position: fixed;
     top: 0;
     left: 0;
+    padding: 20px 0;
     width: 100%;
     z-index: 4;
-    transition: 0.2s var(--cubic-out);
+    transition: all 0.4s;
 }
 
 .primary-header .container {
@@ -460,6 +461,7 @@ p {
 }
 
 .primary-header.header-onscroll {
+    padding: 0;
     background-color: white;
     box-shadow: var(--shadow-1);
 }
