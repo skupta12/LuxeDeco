@@ -15,7 +15,7 @@
 
   var GOS = {};
 
-  var plugin_path = "assets/js/vendor/";
+  var plugin_path = "src/js/vendor/";
   $.fn.exists = function () {
     return this.length > 0;
   };
