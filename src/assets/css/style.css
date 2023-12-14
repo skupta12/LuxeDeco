@@ -266,6 +266,9 @@ p {
     padding: var(--size-400);
 }
 
+    /* ------------------------- */
+    /* CONTAINER MEDIA QUERIES */
+
 
 @media (min-width: 640px) {
     .container {
@@ -295,6 +298,10 @@ p {
     line-height: 2;
     margin: var(--size-500) 0;
 }
+
+    /* ------------------------- */
+    /* SECTION MEDIA QUERIES */
+
 
 @media (min-width: 768px) {
     .section {
@@ -391,6 +398,10 @@ p {
     width: 20px;
     height: 16px;
 }
+
+    /* ------------------------- */
+    /* BUTTON MEDIA QUERIES */
+
 
 @media (max-width: 1024px) {
     .primary-header .btn-1 {
@@ -566,8 +577,8 @@ p {
     pointer-events: all;
 }
 
-/* ------------------------- */
-/* HEADER MEDIA QUERIES */
+    /* ------------------------- */
+    /* HEADER MEDIA QUERIES */
 
 
 @media(min-width: 1024.98px) {
@@ -753,7 +764,12 @@ p {
     opacity: 0.8;
 }
 
+    /* ------------------------- */
+    /* HERO MEDIA QUERIES */
+
+
 @media(max-width: 1024px) {
+
     .hero-section {
         padding-top: 100px;
     }
@@ -849,6 +865,10 @@ p {
     line-height: 1.6;
 }
 
+    /* ------------------------- */
+    /* ARTISTIC MEDIA QUERIES */
+
+
 @media(max-width: 1024px) {
     .artistic-box {
         gap: 27px;
@@ -927,6 +947,10 @@ p {
     background-color: var(--clr-neutral-100);
 }
 
+    /* ------------------------- */
+    /* DISCOVER MEDIA QUERIES */
+
+
 @media(max-width: 1024px) {
     .discover-item:nth-child(1) {
         grid-column: span 12 / span 12;
@@ -987,6 +1011,10 @@ p {
     max-width: 650px;
     text-align: center;
 }
+
+    /* ------------------------- */
+    /* COUNTER MEDIA QUERIES */
+
 
 @media(max-width: 1024px) {
     .counter-item + .counter-item {
@@ -1067,6 +1095,10 @@ p {
     font-size: var(--fs-600);
     font-weight: var(--fw-bold);
 }
+
+    /* ------------------------- */
+    /* UNIQUE MEDIA QUERIES */
+
 
 @media(max-width: 1024px) {
     .unique-item:nth-child(1) {
@@ -1336,6 +1368,10 @@ p {
     filter: blur(10px);
 }
 
+    /* ------------------------- */
+    /* MASONRY && POPUP MEDIA QUERIES */
+
+
 @media(max-width: 1024px) {
     .masonry-listing .masonry-item {
         padding: var(--size-400);
@@ -1461,6 +1497,10 @@ p {
     background-color: var(--clr-primary-200) !important;
 }
 
+    /* ------------------------- */
+    /* TESTIMONIAL MEDIA QUERIES */
+
+
 @media(max-width: 1024px) {
     .testimonial-section .section-text {
         text-align: center;
@@ -1544,6 +1584,10 @@ p {
 .accordion-item.active .accordion-body {
     background-color: #EBE5E0;
 }
+
+    /* ------------------------- */
+    /* ACCORDION MEDIA QUERIES */
+
 
 @media(max-width: 640px) {
     .accordion-header h5 {
@@ -1649,6 +1693,10 @@ p {
 .footer-nav .footer-list a:hover {
     color: var(--clr-neutral-100);
 }
+
+    /* ------------------------- */
+    /* FOOTER MEDIA QUERIES */
+    
 
 @media(max-width: 768px) {
     .footer-box {
