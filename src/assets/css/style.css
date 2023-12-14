@@ -517,6 +517,7 @@ p {
 }
 
 .nav-close-btn {
+    cursor: pointer;
     width: 35px;
     height: 35px;
     box-shadow: 1px 7px 35px 0px rgba(0,0,0,0.18);
