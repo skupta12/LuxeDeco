@@ -738,7 +738,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: var(--size-400);
+    gap: var(--size-200);
 }
 
 .rating-item h6 {
