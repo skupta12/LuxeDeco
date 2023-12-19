@@ -148,7 +148,6 @@
 
     addEventOnElem(navLinks, "click", closeNavbar);
 
-   
   };
 
   GOS.Header_change = function () {
@@ -170,7 +169,8 @@
     if (counter.length > 0) {
       counter.appear(function () {
           $(this).each(function () {
-            $(this).prop("Counter", 0).animate({Counter: $(this).text(),},{
+            $(this).prop("Counter", 0).animate({ Counter: $(this).text() },
+                {
                   duration: 2000,
                   easing: "swing",
                   step: function (e) {
@@ -303,6 +303,7 @@
   GOS.ScrolltoTop = function() {
 
     var scrollToTopButton = $(".scroll-to-top");
+
     $(window).on("scroll", function () {
       if ($(this).scrollTop() > 500) {
         scrollToTopButton.fadeIn();
@@ -346,7 +347,5 @@
       callback();
     }
   }
-
-  console.log(_arr);
 
 })(jQuery);
