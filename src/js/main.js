@@ -330,6 +330,10 @@
     GOS.Header_change();
   });
 
+  $(window).on("load", function () {
+    $("#preloader").delay(300).fadeOut("slow");
+  });
+
   // Window on Resize
   $(window).on("resize", function () {});
 
