@@ -331,7 +331,7 @@
   });
 
   $(window).on("load", function () {
-    $("#preloader").delay(300).fadeOut("slow");
+    $("#preloader").delay(600).fadeOut("slow");
   });
 
   // Window on Resize
