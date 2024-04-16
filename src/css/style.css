@@ -255,7 +255,7 @@ body {
 Preloader
 -------------------------- */
 
-#preloader {
+/* #preloader {
     position: fixed;
     top: 0;
     left: 0;
@@ -317,7 +317,7 @@ Preloader
 @-webkit-keyframes animLoader {
 	0%, 100% { width: 4.8px }
     50% { width: 48px }
-}
+} */
 
 
 

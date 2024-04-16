@@ -330,9 +330,9 @@
     GOS.Header_change();
   });
 
-  $(window).on("load", function () {
-    $("#preloader").delay(600).fadeOut("slow");
-  });
+  // $(window).on("load", function () {
+  //   $("#preloader").delay(600).fadeOut("slow");
+  // });
 
   // Window on Resize
   $(window).on("resize", function () {});
